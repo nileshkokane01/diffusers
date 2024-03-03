@@ -297,6 +297,8 @@ if __name__ == "__main__":
     converted_unet_ckpt = con_pt_to_diffuser(args.unet_path, unet_config)
 
     image_unet = UNet2DModel(**unet_config)
+    print('modified :  nilesh ')
+    print(image_unet)
     image_unet.load_state_dict(converted_unet_ckpt)
 
     # Get scheduler config
